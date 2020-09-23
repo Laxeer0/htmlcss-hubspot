@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+
+  font-family: 'Roboto', sans-serif;
+}
+
+.container{
+  margin: 0;
+  padding: 0;
+}
+
+.top-header{
+  background-color: #e3ebff;
+  border-bottom: 1px solid darkblue;
+  padding-top:15px;
+  padding-bottom:15px;
+  padding-left:50px;
+}
+
+.top-header-text{
+
+}
+nav.top-navbar{
+margin: 15px 0;
+margin-left: 50px;
+margin-right: 120px;;
+}
+
+.logo, .navbar, .navbar > li{
+  display: inline-block;
+}
+
+ul.navbar{
+  float:right;
+}
+
+.announcement{
+  padding-top:50px;
+  padding-left:15%;
+  background-color: #ffebeb;
+  padding-bottom: 100px;
+
+}
+.announcement-box{
+  width:500px;
+  height:400px;
+}
+.announcement-box > h1{
+  font-size: 45px;
+
+}
+.announcement-p{
+    margin-top:25px;
+}
+
+.txt-md{
+  font-size:17px;
+}
+.txt-sm{
+
+  font-size:12px;
+}
+.txt-lg{
+
+  font-size:25px;
+}
+
+
+.divider{
+  background: #a3ffff;
+  height:50px;
+  border-top: 2px solid darkblue;
+  border-bottom: 2px solid darkblue;
+}
+
+main{
+  background-color: #f0f4ff;
+  padding: 25px 12%;
+}
+
+.clearfix{
+  clear:both;
+}
+
+.products{
+
+  margin-bottom:300px;/*Da rimuovere*/
+}
+
+.products-title{
+  display:block;
+  margin: 0 auto;
+  width:60%;
+  margin-bottom:30px;
+  text-align:center;
+}
+.products-title > h2{
+  margin-bottom: 30px;
+}
+.products-logo{
+  margin-bottom:10px;
+}
+
+.col-full{
+  width:100%;
+}
+
+.col-2{
+  width:30%;
+}
+.col-3{
+  width:30%;
+}
+.col-7{
+  width:70%;
+}
+
+.left{
+  float:left;
+}
+
+.right{
+  float:right;
+}
+
+.full-products{
+  background-color: white;
+  height:300px;
+  border: 2px solid #e6ecff;
+  border-radius:5px;
+  display: inline-block;
+}
+
+.products-item{
+    background-color: white;
+    height:600px;
+    border: 2px solid #e6ecff;
+    border-radius:5px;
+    display: inline-block;
+}
+
+.products-item2{
+    background-color: white;
+    height:600px;
+    border: 2px solid #e6ecff;
+    border-radius:5px;
+    display: inline-block;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.first-products-logo{
+  height: 100%;
+  line-height: 290px;
+  text-align:center;
+  background-color: yellow;
+}
