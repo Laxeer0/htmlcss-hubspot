@@ -1,4 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+@font-face {
+    font-family: "AvenirNext";
+    font-weight: 400;
+    font-style: normal;
+    font-display: auto;
+    src: url("https://static.hsappstatic.net/ui-fonts/static-1.223/fonts/AvenirNext-Regular.woff2") format("woff2"), url("https://static.hsappstatic.net/ui-fonts/static-1.223/fonts/AvenirNext-Regular.woff") format("woff");
+}
+@font-face {
+    font-family: "AvenirNext";
+    font-weight: 500;
+    font-style: normal;
+    font-display: auto;
+    src: url("https://static.hsappstatic.net/ui-fonts/static-1.223/fonts/AvenirNext-Medium.woff2") format("woff2"), url("https://static.hsappstatic.net/ui-fonts/static-1.223/fonts/AvenirNext-Medium.woff") format("woff");
+}
+@font-face {
+    font-family: "AvenirNext";
+    font-weight: 600;
+    font-style: normal;
+    font-display: auto;
+    src: url("https://static.hsappstatic.net/ui-fonts/static-1.223/fonts/AvenirNext-Demi.woff2") format("woff2"), url("https://static.hsappstatic.net/ui-fonts/static-1.223/fonts/AvenirNext-Demi.woff") format("woff");
+}
+@font-face {
+    font-family: "AvenirNext";
+    font-weight: 700;
+    font-style: normal;
+    font-display: auto;
+    src: url("https://static.hsappstatic.net/ui-fonts/static-1.223/fonts/AvenirNext-Bold.woff2") format("woff2"), url("https://static.hsappstatic.net/ui-fonts/static-1.223/fonts/AvenirNext-Bold.woff") format("woff");
+}
 
 *{
   margin: 0;
@@ -8,7 +35,7 @@
 
 body{
 
-  font-family: 'Roboto', sans-serif;
+  font-family: 'AvenirNext', sans-serif;
 }
 
 .container{
@@ -18,13 +45,17 @@ body{
 
 .top-header{
   background-color: #e3ebff;
-  border-bottom: 1px solid darkblue;
-  padding:0 25%;
-  padding-top:15px;
+  border-bottom: 1px solid #3f4461;
+  margin:auto;
 }
 
+.top-header-container{
+  padding:25px 25%;
+}
 .top-header-text{
-
+  color:#3f4461;
+  display: inline-block;
+  word-spacing: 5px;
 }
 nav.top-navbar{
   padding:15px 25%;
@@ -33,28 +64,101 @@ nav.top-navbar{
 .logo, .navbar, .navbar > li{
   display: inline-block;
 }
+img.logo{
+  height:50px;
+}
 
 ul.navbar{
   float:right;
+  line-height: 54px;
+}
+
+ul.top-head{
+  float:right;
+
+  transform: translateY(-25%);
+}
+ul.top-head > li{
+  display: inline-block;
+  padding:0 10px;
+}
+
+button.log-in{
+  border-radius: 5px;
+  border: 3px solid #ff5a30;
+  padding:10px 14px;
+    color: #ff5a30;
+}
+
+button.log-in:hover{
+  background-color: #ff5a30;
+  color:#fff;
+  cursor:pointer;
+}
+
+button.gethubspotfree-head{
+  border-radius: 5px;
+  border: 3px solid #ff5a30;
+  padding:10px 14px;
+  color: white;
+  background-color:#ff5a30;
+}
+
+button.gethubspotfree-head:hover{
+  background-color: white;
+  color:#ff5a30;
+  cursor:pointer;
+}
+ul.navbar > li{
+  padding: 0 10px;
+  font-weight: bold;
+}
+ul.navbar > li > a{
+  text-decoration: none;
+}
+
+.button-control{
+  padding: 20px 45px;
+  background-color:#ff5a30;
+  color:#fff;
+  border-radius: 6px;
+  border: 1px solid #ff5a30;
+}
+
+.button-control:hover{
+  background-color:#ba4223;
+  cursor:pointer;
 }
 
 .announcement{
+
+  background-color: #ffebeb;
+  background-image: url("../img/announcement.png");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
   padding: 0 25%;
   padding-top:50px;
-  background-color: #ffebeb;
   padding-bottom: 100px;
 
 }
 .announcement-box{
-  width:500px;
+  width:550px;
   height:400px;
 }
 .announcement-box > h1{
   font-size: 45px;
+  color:#3f4461;
 
 }
 .announcement-p{
     margin-top:25px;
+    margin-bottom:25px;
+
+}
+
+.p-spacing{
+  word-spacing: 5px;
 }
 
 .txt-md{
@@ -68,13 +172,17 @@ ul.navbar{
 
   font-size:25px;
 }
+.txt-xl{
+
+  font-size:35px;
+}
 
 
 .divider{
-  background: #a3ffff;
-  height:50px;
-  border-top: 2px solid darkblue;
-  border-bottom: 2px solid darkblue;
+  background: #00ba92;
+  height:75px;
+  border-top: 2px solid #3f4461;
+  border-bottom: 2px solid #3f4461;
 }
 
 main{
@@ -95,11 +203,13 @@ main{
   width:60%;
   margin-bottom:30px;
   text-align:center;
+  color: #3f4461;
 }
 .products-title > h2{
   margin-bottom: 30px;
 }
 .products-logo{
+  height:250px;
   margin-bottom:10px;
 }
 
@@ -133,7 +243,6 @@ main{
   height:300px;
   border: 2px solid #e6ecff;
   border-radius:5px;
-  display: inline-block;
   margin-bottom:50px;
 }
 
@@ -161,14 +270,33 @@ main{
   clear: both;
 }
 .first-products-logo{
-  height: 100%;
   text-align:center;
+}
+
+img.products-logo{
+  width:170px;
+  height:170px;
+}
+
+img.products-logo-title{
+  width:270px;
+}
+div.products-text {
+
+}
+
+.products-text{
+  display: inline-block;
   vertical-align: middle;
-  display: table-cell;
+  line-height: normal;
+  width:100%;
+}
+.product-control{
+  line-height: 300px;
 }
 
 .community{
-  background: linear-gradient(90deg, rgba(0,198,179,1) 0%, rgba(0,218,186,1) 100%);
+  background: linear-gradient(90deg, rgba(30, 189, 163,1) 0%, rgba(0,218,186,1) 100%);
 }
 .box-community{
   color:#fff;
@@ -187,7 +315,7 @@ main{
     height:200px;
     display: inline-block;
     margin:0 auto;
-    color: black;
+    color: #3f4461;
     font-size:24px;
 
 }
@@ -257,7 +385,7 @@ footer{
     height:100%;
       display: inline-block;
       margin:0 auto;
-      color: black;
+      color: #3f4461;
       font-size:24px;
 
   }
